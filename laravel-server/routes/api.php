@@ -3,6 +3,10 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AddController;
+use App\Http\Controllers\GetController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +23,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post("/register", [AuthController::class,"register"]);
+Route::post("/register", [AuthController::class, "register"]);
+Route::post("/add_response", [AddController::class, "addResponse"]);
+
+
+
+Route::post("/add_question", [AddController::class, "addQuestion"]);
 Route::post("/login", [AuthController::class,"login"]);
+Route::post("/add_survey", [AddController::class, "addSurvey"]);
+
+
+
+
+

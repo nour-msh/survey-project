@@ -49,7 +49,6 @@ class AuthController extends Controller
             'user' => $user,
         ], 201);
     }
-    
     protected function createNewToken($token){
         return response()->json([
             'access_token' => $token,
