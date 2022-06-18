@@ -8,7 +8,7 @@ function About(){
         <div>
             <h2>Create FREE online surveys with unlimited questions and responses!</h2>
             <img src={surveyImage} alt=""/>
-        </div>
+        </div>    
     </div>
         
     )

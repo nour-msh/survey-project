@@ -12,31 +12,41 @@
 .nav-bar > h2{
   display: flex;
   justify-content: left;
-  margin-left:20px;
+  margin-left:25px;
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: 100;
 }
 .nav-bar > ul {
   display: flex;
   justify-content: right;
   list-style: none;
   gap: 20px;
+  font-size: 20px;
   margin-right:20px;
 }
 .about >h1 {
   display: flex;
   justify-content: center;
+  font-size:40px;
 }
-.about >h2{
+.about> div{
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
+
+}
+.about>div>h2{
   margin-left: 20px;
   width: 40%;
-  margin-top: 10%;
-  font-size: 40px;
+  margin-top: 20%;
+  margin-left:25px;
+  font-size: 45px;
 }
 
-.about>img{
-  height:200px;
-  width:200px;
+.about>div >img{
+  height:500px;
+  width:900px;
+  margin-top:60px
 
 }
 
