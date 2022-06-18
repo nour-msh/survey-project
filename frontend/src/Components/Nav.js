@@ -1,14 +1,35 @@
-import React, { Component } from 'react';
+import React, { useState } from "react";
+import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
 function Nav() {
-    return (
-        <nav className="nav-bar">
-            <h2>Survey<strong>Maker</strong></h2>
-            <ul>
-                <li>Login</li>
-                <li>Sign Up</li>
-            </ul>
-        </nav>
-    )
-  };
+  const [showForm, setLoginForm] = useState(false);
+  const [openForm, setSignupForm] = useState(false);
+  return (
+    <>
+      <nav className="nav-bar">
+        <h2>
+          Survey<strong>Maker</strong>
+        </h2>
+        <div>
+          <button
+            onClick={() => {
+              setLoginForm(!showForm);
+            }}
+            >
+            Login
+          </button>
+          <button onClick={() => {
+              setSignupForm(!openForm);
+            }}
+            >
+            Sign Up</button>
+        </div>
+      </nav>
+      <div>{showForm && <LoginForm/>}</div>
+      <div>{openForm && <SignupForm/>}</div>
+    </>
+  );
+}
 
-  export default Nav;
+
+export default Nav

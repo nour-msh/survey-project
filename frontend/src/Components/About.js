@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import surveyImage from "../assets/surveyImage.jpg"
 
 function About(){

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-function LoginForm() {
+function SignupForm() {
   
     return (
       <div className="container">
         <form className="myform">
-          <h5>Log In</h5>
+        <h5>Sign Up</h5>
           
             <label>Name:</label>
             <input
@@ -17,11 +17,10 @@ function LoginForm() {
               placeholder='Enter Password'
            
             />
-            <button>Login</button>
-          
+            <button>Sign Up</button>
         </form>
       </div>
     )
 };
 
-export default LoginForm
+export default SignupForm
