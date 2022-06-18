@@ -22,14 +22,14 @@ function Nav() {
           Survey<strong>Maker</strong>
         </h2>
         <div>
-          <button
+          <button className="btn"
             onClick={() => {
               setLoginForm(!showForm);
             }}
             >
             Login
           </button>
-          <button onClick={() => {
+          <button className="btn" onClick={() => {
               setSignupForm(!openForm);
             }}
             >

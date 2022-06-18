@@ -1,4 +1,10 @@
 const About = () => {
-    return <h1>Hello There!</h1>;
-   };
+    return (
+        <div>
+            <h1>Hello There!</h1>
+           
+        </div>
+   
+   )
+};
    export default About;

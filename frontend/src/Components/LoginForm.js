@@ -17,7 +17,7 @@ function LoginForm() {
               placeholder='Enter Password'
            
             />
-            <button>Login</button>
+            <button className="btn">Login</button>
           
         </form>
       </div>
