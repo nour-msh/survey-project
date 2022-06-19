@@ -17,7 +17,7 @@ function SignupForm() {
               placeholder='Enter Password'
            
             />
-            <button>Sign Up</button>
+            <button className="btn orange" >Sign Up</button>
         </form>
       </div>
     )

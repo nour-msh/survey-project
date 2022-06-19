@@ -19,17 +19,17 @@ function Nav() {
       </Link>
       <nav className="nav-bar">
         <h2>
-          Survey<strong>Maker</strong>
+          SurveyMaker
         </h2>
         <div>
-          <button className="btn"
+          <button className="btn orange"
             onClick={() => {
               setLoginForm(!showForm);
             }}
             >
             Login
           </button>
-          <button className="btn" onClick={() => {
+          <button className="btn yellow" onClick={() => {
               setSignupForm(!openForm);
             }}
             >

@@ -4,7 +4,6 @@ import Nav from "./Components/Nav";
 import Home from "./Pages/Home";
 import Admin from "./Pages/Admin";
 import User from "./Pages/User";
-import About from "./Components/About";
 
 function App() {
   return (
