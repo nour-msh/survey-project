@@ -110,29 +110,6 @@
   border: none;
   background-color: #ffc862;
 }
-/* .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.show {display: block;} */
 
 .Container{
   width:700px;
@@ -159,27 +136,17 @@
 .ques{
   margin-left: 17%;
 }
-/* .DropdownButton {
-
-  color: white;
-
-  background-color: blue;
-  border-radius: 5px;
-
-  padding: 5px;
-
-  width: max-content;
-
+.yesNo{
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
-.DropdownElement {
-
-  color: white;
-
-  background-color: green;
+.myText{
+  width:620px;
+  height:50px;
+  border:1px solid #d5d5d5;
   border-radius: 5px;
-
-  padding: 5px;
-
-  width: max-content;
-
-} */
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding:20px;
+}

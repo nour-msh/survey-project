@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import Boolean from "./Boolean";
+import Text from "./Text";
+import Checkbox from "./Checkbox";
 
 function QuestionBox() {
-  // const [showText, setTextForm] = useState(false);
+  const [showText, setText] = useState(false);
   const [showBoolean, setBoolean] = useState(false);
+  const [showCheckbox, setOption] = useState(false);
 
   return (
     <>
@@ -17,6 +20,13 @@ function QuestionBox() {
               if (selectedOption === "boolean") {
                 setBoolean(!showBoolean);
               }
+
+              if (selectedOption==="text"){
+                setText(!showText);
+              }
+              if (selectedOption==="checkbox"){
+                setOption(!showCheckbox);
+              }
             }}
           >
             <option value="text">Text</option>
@@ -28,9 +38,12 @@ function QuestionBox() {
             <option value="boolean">Boolean</option>
           </select>
         </div>
+        <div>{showBoolean && <Boolean />}</div>
+        <div>{showText && <Text/>}</div>
+        <div>{showCheckbox && <Checkbox/>}</div>
       </div>
 
-      <div>{showBoolean && <Boolean />}</div>
+      
     </>
   );
 }

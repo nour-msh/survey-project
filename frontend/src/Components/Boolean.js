@@ -4,8 +4,8 @@ function Boolean(){
     return (
         <>
         <div>
-            <button className='yes btn'>YES</button>
-            <button className='no btn'>NO</button>
+            <button className='yesNo btn'>YES</button>
+            <button className='yesNo btn'>NO</button>
         </div>
         </>
     )
