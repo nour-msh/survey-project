@@ -4,6 +4,10 @@ import Nav from "./Components/Nav";
 import Home from "./Pages/Home";
 import Admin from "./Pages/Admin";
 import User from "./Pages/User";
+// import Element from './Components/Element';
+// import Dropdown from './Components/Dropdown';
+// import DropdownElement from './Components/DropdownElement';
+// import DropdownButton from "./Components/DropdownButton";
 
 function App() {
   return (
@@ -16,9 +20,14 @@ function App() {
           <Route exact path="/user" element={<User />} />
         </Routes>
       </Router>
+        {/* <Dropdown/>
+        <Element/>
+        <DropdownButton/>
+        <DropdownElement/> */}
+      
       {/* <About/> */}
     </>
-  );
+  )
 }
 
-export default App;
+export default App

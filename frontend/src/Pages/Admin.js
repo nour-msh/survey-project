@@ -4,6 +4,7 @@ import React, { useState } from "react";
 
 const Admin = () => {
     const [openSurvey, setSurveyForm] = useState(false);
+    
     return (
         <>
     <div className="adminAccess">
@@ -13,8 +14,10 @@ const Admin = () => {
                 setSurveyForm(!openSurvey);
                 }}>Create Questionnaire</button>
         </div>
+
     </div>
     <div>{openSurvey && <Survey/>}</div>
+    
     </>
     )
    };
