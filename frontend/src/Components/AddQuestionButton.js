@@ -6,7 +6,7 @@ function AddQuestion(){
     return(
         <>
         <div>
-            <button onClick={() => {
+            <button className="save btn add-btn" onClick={() => {
                 setQuestionForm(true);}}>+</button>
         </div>
         <div>{openQuestionForm && <QuestionBox/>}</div>

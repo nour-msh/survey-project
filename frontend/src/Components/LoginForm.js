@@ -7,9 +7,9 @@ function LoginForm() {
         <form className="myform">
           <h5>Log In</h5>
           
-            <label>Name:</label>
+            <label>Email:</label>
             <input
-              placeholder='Enter Name'
+              placeholder='Enter Email'
         
             />
             <label>Password:</label>

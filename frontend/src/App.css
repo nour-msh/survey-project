@@ -8,9 +8,10 @@
   border-radius: 5px;
   background-color: transparent;
   height: 40px;
-  width:90px;
+  width:85px;
   margin-right: 20px;
   font-size: 16px;
+  border:1px solid
 }
 .orange{
   background-color: #ffc862;
@@ -149,4 +150,10 @@
   margin-bottom: 20px;
   margin-top: 40px;
   padding:20px;
+}
+.save{
+  margin-left: 47%;
+}
+.add-btn{
+  border:none
 }

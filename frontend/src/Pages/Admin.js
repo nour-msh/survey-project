@@ -22,7 +22,7 @@ const Admin = () => {
     </div>
     <div>{openSurvey && <Survey/>}</div>
     <div>{openQuestionForm && <QuestionBox/>}</div>
-    <button className='btn'>Save</button>
+    <button className='btn save'>Save</button>
     </>
     )
    };

@@ -15,7 +15,7 @@ function QuestionBox() {
     <>
       <div className="Container">
         <input className="question" placeholder="Insert question here"></input>
-        <button className="btn">Add</button>
+        <button className="btn ">Add</button>
         <div>
           <select
             onChange={(e) => {
@@ -42,13 +42,14 @@ function QuestionBox() {
             <option value="boolean">Boolean</option>
             
           </select>
-          <AddQuestion/>
+          
           
         </div>
         <div>{showBoolean && <Boolean />}</div>
         <div>{showText && <Text/>}</div>
         <div>{showCheckbox && <Checkbox/>}</div>
       </div>
+      <AddQuestion/>
 
       
     </>
