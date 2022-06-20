@@ -15,8 +15,6 @@ function Survey(){
                 }}>Add Question</button>
             
         </div>
-
-
         <div>{openQuestionForm && <QuestionBox/>}</div>
       
         </>
