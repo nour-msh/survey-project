@@ -10,11 +10,11 @@ const Admin = () => {
         <>
     <div className="adminAccess">
         <h1>Welcome, Admin</h1>
-        <div>
+        {/* <div> */}
             <button className="create-btn" onClick={() => {
                 setSurveyForm(!openSurvey);
                 }}>Create Questionnaire</button>
-        </div>
+        {/* </div> */}
 
         
        
