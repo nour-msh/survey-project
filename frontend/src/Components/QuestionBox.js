@@ -1,4 +1,5 @@
 import React, { useState} from "react";
+import axios from "axios";
 import Boolean from "./Boolean";
 import Text from "./Text";
 import Checkbox from "./Checkbox";
@@ -9,13 +10,25 @@ function QuestionBox() {
   const [showBoolean, setBoolean] = useState(false);
   const [showCheckbox, setOption] = useState(false);
 
+  const[myQuestion,setMyQuestion]=useState("");
+
+  const handleSubmit = (e)=> {
+    const data=new FormData
+    data.append('text',myQuestion)
+    e.preventDefault();
+      axios({
+        method:"post",
+        data,
+        url:"http://127.0.0.1:8000/api/add_question",
+      }).then(res=>console.log(res)).catch(error=>console.log(error))
+  }
 
 
   return (
     <>
       <div className="Container">
-        <input className="question" placeholder="Insert question here"></input>
-        <button className="btn ">Add</button>
+        <input className="question" placeholder="Insert question here" value={myQuestion} onChange={(e)=>setMyQuestion(e.target.value)}></input>
+        <button className="btn" onClick={handleSubmit}>Add</button>
         <div>
           <select
             onChange={(e) => {
